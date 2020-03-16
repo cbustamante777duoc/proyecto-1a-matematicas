@@ -1,0 +1,24 @@
+{
+  "name": "proyecto-1a-matematicas",
+  "version": "1.0.0",
+  "description": "proyecto con node para luego subir a npm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cbustamante777duoc/proyecto-1a-matematicas.git"
+  },
+  "keywords": [
+    "math",
+    "node",
+    "npm"
+  ],
+  "author": "cristian bustamante",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cbustamante777duoc/proyecto-1a-matematicas/issues"
+  },
+  "homepage": "https://github.com/cbustamante777duoc/proyecto-1a-matematicas#readme"
+}
