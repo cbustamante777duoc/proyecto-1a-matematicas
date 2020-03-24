@@ -7,7 +7,7 @@ module.exports = {
      * @param {*} n2 numero 2 de la suma
      */
     suma: function(n1,n2){
-        return `el resultado es  ${n1+n2} ;` 
+        return (this.esNumero(n1,n2) ? n1+n2 :this.MensajeError() )
     },
      /**
      * resta  dos numeros
@@ -17,7 +17,7 @@ module.exports = {
      * @param {*} n2 numero 2 de la resta
      */
     resta: function(n1,n2){
-        return `el resultado es  ${n1-n2} ;` 
+        return (this.esNumero(n1,n2) ?  n1-n2 :this.MensajeError() )
     },
      /**
      * multiplica dos numeros
@@ -27,7 +27,7 @@ module.exports = {
      * @param {*} n2 numero 2 de la multiplicacion
      */
     multiplicacion: function(n1,n2){
-        return `el resultado es  ${n1*n2} ;` 
+        return (this.esNumero(n1,n2) ? n1*n2 :this.MensajeError() )
     },
      /**
      * division de dos numeros
@@ -37,6 +37,25 @@ module.exports = {
      * @param {*} n2 numero 2 de la divison
      */
     division: function(n1,n2){
-        return `el resultado es  ${n1/n2} ;` 
+        return (this.esNumero(n1,n2) ? n1/n2 :this.MensajeError() )
+    },
+    /**
+     * mensaje de error en caso que un parametro este malo
+     */
+    MensajeError: function(){
+        console.log('uno de los valores no es un numero');
+    },
+    /**
+     * funcion que comprueba que sean valores numericos
+     * @param {*} n1 
+     * @param {*} n2 
+     */
+    esNumero: function(n1,n2){
+        if(typeof n1 !=='number' || typeof n2 !=='number'){
+            return false;
+        }
+        else{
+            return true;
+        }
     }
 }
